@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.21.0
+
+### Minor Changes
+
+- e3c966f: Added Baseten Provider
+
+### Patch Changes
+
+- 7620f17: Clear errors from UI when retrying current task
+- 1c026c2: Fix input box positioning issue in chat view.
+
 ## [3.20.8]
 
 - Add navbar tooltips on hover
