@@ -1,5 +1,11 @@
 {
 	"compilerOptions": {
+		"outDir": "cline-modules",
+        "skipDefaultLibCheck": true,
+        "allowJs": true,
+        "checkJs": true,
+        "maxNodeModuleJsDepth": 1,
+		"composite": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
@@ -14,25 +20,27 @@
 		"resolveJsonModule": true,
 		"rootDir": ".",
 		"skipLibCheck": true,
-		"sourceMap": true,
+		"sourceMap": false,
+        "declaration": true,
 		"strict": true,
 		"target": "es2022",
 		"useDefineForClassFields": true,
 		"useUnknownInCatchVariables": false,
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"],
-			"@api/*": ["src/api/*"],
-			"@core/*": ["src/core/*"],
-			"@generated/*": ["src/generated/*"],
-			"@hosts/*": ["src/hosts/*"],
-			"@integrations/*": ["src/integrations/*"],
-			"@packages/*": ["src/packages/*"],
-			"@services/*": ["src/services/*"],
-			"@shared/*": ["src/shared/*"],
-			"@utils/*": ["src/utils/*"]
+			"@/*": ["packages/cline-modules/src/*"],
+			"@api/*": ["packages/cline-modules/src/api/*"],
+			"@core/*": ["packages/cline-modules/src/core/*"],
+			"@generated/*": ["packages/cline-modules/src/generated/*"],
+			"@hosts/*": ["packages/cline-modules/src/hosts/*"],
+			"@integrations/*": ["packages/cline-modules/src/integrations/*"],
+			"@packages/*": ["packages/cline-modules/src/packages/*"],
+			"@services/*": ["packages/cline-modules/src/services/*"],
+			"@shared/*": ["packages/cline-modules/src/shared/*"],
+			"@utils/*": ["packages/cline-modules/src/utils/*"]
 		}
 	},
-	"include": ["src/**/*", "scripts/**/*"],
+    "references": [{ "path": "./packages/extension" }],
+	"include": ["packages/scripts/**/*","packages/cline-modules"],
 	"exclude": ["node_modules", ".vscode-test", "webview-ui", "src/test/e2e/**/*"]
 }

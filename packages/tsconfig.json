@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"outDir": "cline-modules",
+		"composite": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"lib": ["es2022", "DOM"],
+		"module": "esnext",
+		"moduleResolution": "Bundler",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": false,
+		"resolveJsonModule": true,
+		"rootDir": ".",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es2022",
+		"useDefineForClassFields": true,
+		"useUnknownInCatchVariables": false,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["extension/src/*"],
+			"@api/*": ["extension/src/api/*"],
+			"@core/*": ["extension/src/core/*"],
+			"@generated/*": ["extension/src/generated/*"],
+			"@hosts/*": ["extension/src/hosts/*"],
+			"@integrations/*": ["extension/src/integrations/*"],
+			"@packages/*": ["extension/src/packages/*"],
+			"@services/*": ["extension/src/services/*"],
+			"@shared/*": ["extension/src/shared/*"],
+			"@utils/*": ["extension/src/utils/*"]
+		}
+	},
+	"include": ["extension/src/**/*", "scripts/**/*"],
+	"exclude": ["node_modules", ".vscode-test", "webview-ui", "extension/src/test/e2e/**/*"]
+}

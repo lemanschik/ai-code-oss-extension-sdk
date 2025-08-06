@@ -1,3 +1,4 @@
+*.tsbuildinfo
 out
 dist
 dist-standalone
@@ -15,8 +16,8 @@ pnpm-lock.yaml
 .venv
 .actrc
 
-webview-ui/src/**/*.js
-webview-ui/src/**/*.js.map
+packages/webview-ui/src/**/*.js
+packages/webview-ui/src/**/*.js.map
 
 # Ignore coverage directories and files
 coverage

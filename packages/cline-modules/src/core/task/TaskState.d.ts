@@ -1,0 +1,36 @@
+import { Anthropic } from "../../anthropic-ai/sdk";
+import { AssistantMessageContent } from "../assistant-message";
+import { StreamingJsonReplacer } from "../assistant-message/diff-json";
+import { ClineAskResponse } from "../../shared/WebviewMessage";
+export declare class TaskState {
+    isStreaming: boolean;
+    isWaitingForFirstChunk: boolean;
+    didCompleteReadingStream: boolean;
+    currentStreamingContentIndex: number;
+    assistantMessageContent: AssistantMessageContent[];
+    userMessageContent: (Anthropic.TextBlockParam | Anthropic.ImageBlockParam)[];
+    userMessageContentReady: boolean;
+    presentAssistantMessageLocked: boolean;
+    presentAssistantMessageHasPendingUpdates: boolean;
+    streamingJsonReplacer?: StreamingJsonReplacer;
+    lastProcessedJsonLength: number;
+    askResponse?: ClineAskResponse;
+    askResponseText?: string;
+    askResponseImages?: string[];
+    askResponseFiles?: string[];
+    lastMessageTs?: number;
+    isAwaitingPlanResponse: boolean;
+    didRespondToPlanAskBySwitchingMode: boolean;
+    conversationHistoryDeletedRange?: [number, number];
+    didRejectTool: boolean;
+    didAlreadyUseTool: boolean;
+    didEditFile: boolean;
+    consecutiveAutoApprovedRequestsCount: number;
+    consecutiveMistakeCount: number;
+    didAutomaticallyRetryFailedApiRequest: boolean;
+    checkpointTrackerErrorMessage?: string;
+    isInitialized: boolean;
+    abort: boolean;
+    didFinishAbortingStream: boolean;
+    abandoned: boolean;
+}
