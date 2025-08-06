@@ -5,10 +5,10 @@
 // source: cline/slash.proto
 
 /* eslint-disable */
-import { Empty, StringRequest } from "./common";
+import { Empty, MessageFns, StringRequest } from "./common";
 
 /** SlashService provides methods for managing slash */
-export type SlashServiceDefinition = typeof SlashServiceDefinition;
+//export type SlashServiceDefinition = typeof SlashServiceDefinition;
 export const SlashServiceDefinition = {
   name: "SlashService",
   fullName: "cline.SlashService",

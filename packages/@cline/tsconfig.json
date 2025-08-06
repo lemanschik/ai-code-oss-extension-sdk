@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "cline-modules",
+		"outDir": "modules",
 		"composite": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
@@ -36,5 +36,5 @@
 		}
 	},
 	"include": ["extension/src/**/*", "scripts/**/*"],
-	"exclude": ["node_modules", ".vscode-test", "webview-ui", "extension/src/test/e2e/**/*"]
+	"exclude": ["node_modules", ".vscode-test", "@cline/webview-ui", "extension/src/test/e2e/**/*"]
 }

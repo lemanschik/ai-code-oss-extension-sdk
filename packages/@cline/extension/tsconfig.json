@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "../cline-modules",
+		"outDir": "../modules",
 		"composite": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,

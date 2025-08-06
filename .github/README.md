@@ -7,3 +7,16 @@ via workspace files.
 it ships also with value able mcp implementations like 
 - git auto commit
 - worktree checkouts for long running tasks
+
+
+## Failures of the remote branch
+- Does factor to nativ fs away from workspace api https://github.com/cline/cline/blob/main/src/integrations/workspace/WorkspaceTracker.ts
+- Does integrate everything on the backend.
+- Is not coded with good analyzeable coding patterns.
+- mainly type and grpc ejaculation and masturbation.
+
+interface MessageFns<T> { in packages\@cline\extension\src\shared\proto\cline\common.ts needs export
+
+
+
+needs to get resolved import { BinaryReader, BinaryWriter } from "../../../bufbuild/protobuf/wire";

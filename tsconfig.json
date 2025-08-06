@@ -41,6 +41,6 @@
 		}
 	},
     "references": [{ "path": "./packages/extension" }],
-	"include": ["packages/scripts/**/*","packages/cline-modules"],
+	"include": ["packages/@cline/scripts/**/*","packages/@cline/modules"],
 	"exclude": ["node_modules", ".vscode-test", "webview-ui", "src/test/e2e/**/*"]
 }
